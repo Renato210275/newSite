@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #006847, #fff, #ce1126);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: transparent;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: #ce1126;
+    text-shadow: 1px 1px 2px #00000055;
+  }
+  nav {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #006847;
+  }
+  nav a {
+    color: #006847;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ce1126;
+    text-decoration: underline;
+  }
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgb(0 0 0 / 0.1);
+    border-left: 5px solid #006847;
+    border-right: 5px solid #ce1126;
+  }
+  h2 {
+    margin-bottom: 15px;
+    color: #006847;
+  }
+
+  /* Categorias títulos */
+  h3.category-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    margin: 30px 0 15px 0;
+    border-radius: 6px;
+  }
+  h3.pratos {
+    background-color: #006847;
+    color: #fff;
+  }
+  h3.bebidas {
+    background-color: #4caf50;
+    color: #fff;
+    border: 2px solid #006847;
+  }
+  h3.sobremesas {
+    background-color: #ffebee;
+    color: #ce1126;
+    border: 2px solid #ce1126;
+  }
+
+  ul.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.menu-list li {
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+    transition: background-color 0.3s;
+  }
+  ul.menu-list li:hover {
+    background-color: #f3fff7;
+  }
+  ul.menu-list li strong {
+    display: block;
+    font-size: 1.2em;
+    color: #ce1126;
+    margin-bottom: 5px;
+    flex: 1 1 100%;
+  }
+  .price {
+    font-weight: bold;
+    margin-right: 15px;
+    white-space: nowrap;
+    color: #333;
+  }
+  .order-button {
+    background-color: #ce1126;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+  }
+  .order-button:hover {
+    background-color: #a60f1a;
+  }
+  footer {
+    background-color: #006847;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }

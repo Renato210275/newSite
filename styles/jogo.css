@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2e3a59;
+    color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1f2a40;
+    color: #f5a623;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #f5a623;
+    margin-bottom: 5px;
+  }
+  
+  section {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 120px;
+    height: 120px;
+    background-color: #f5a623;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #2e3a59;
+    transition: transform 0.3s;
+    user-select: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .card.flipped {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  }
+  
+  #resgate {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background: #2e3a59;
+    border-radius: 10px;
+    color: #f5a623;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  #mensagem-brinde {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  #qrcode-container {
+    margin: 20px auto 10px auto;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #codigo {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #f5a623;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  

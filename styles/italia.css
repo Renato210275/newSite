@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #008C45, #ffffff, #CD212A);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  background-color: #008C45;
+  text-align: center;
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+nav {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #008C45;
+}
+
+nav a {
+  color: #CD212A;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #008C45;
+  text-decoration: underline;
+}
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #CD212A;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #008C45;
+}
+
+h3.category-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  margin: 30px 0 15px 0;
+  border-radius: 6px;
+}
+
+h3.comida {
+  background-color: #008C45;
+  color: #ffffff;
+}
+h3.bebida {
+  background-color: #CD212A;
+  color: #ffffff;
+}
+h3.sobremesa {
+  background-color: #f8d7da;
+  color: #CD212A;
+  border: 2px solid #CD212A;
+}
+
+ul.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul.menu-list li {
+  padding: 15px;
+  background-color: #fffdfd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+ul.menu-list li:hover {
+  background-color: #f0f0f0;
+}
+
+li img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #CD212A;
+  flex-shrink: 0;
+}
+
+.flexColunm {
+  flex: 1;
+}
+
+.flexColunmsInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+li strong {
+  font-size: 1.4em;
+  color: #008C45;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+.order-button {
+  background-color: #CD212A;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  max-width: fit-content;
+}
+
+.order-button:hover {
+  background-color: #8B0000;
+}
+
+footer {
+  background-color: #008C45;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
