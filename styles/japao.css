@@ -1,138 +1,153 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #fff, #f5f5f5);
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffffff, #bc002d, #ffffff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-  header {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 30px 0;
-    font-weight: bold;
-    font-size: 3em;
-    letter-spacing: 5px;
-    color: #bc002d;
-    text-shadow: 1px 1px 2px #00000055;
-  }
+header {
+  background-color: #bc002d;
+  text-align: center;
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #00000055;
+}
 
-  nav {
-    background-color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-bottom: 2px solid #bc002d;
-  }
+nav {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #bc002d;
+}
 
-  nav a {
-    color: #bc002d;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s;
-  }
+nav a {
+  color: #bc002d;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
 
-  nav a:hover {
-    color: #77001a;
-    text-decoration: underline;
-  }
+nav a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 
-  section {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 900px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #bc002d;
-  }
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #bc002d;
+}
 
-  h2 {
-    margin-bottom: 15px;
-    color: #bc002d;
-  }
+h2 {
+  margin-bottom: 15px;
+  color: #bc002d;
+}
 
-  /* Categorias títulos */
-  h3.category-title {
-    text-align: center;
-    font-weight: bold;
-    padding: 12px;
-    margin: 30px 0 15px 0;
-    border-radius: 6px;
-  }
-  h3.pratos {
-    background-color: #bc002d;
-    color: #fff;
-  }
-  h3.bebidas {
-    background-color: #f44336;
-    color: #fff;
-    border: 2px solid #bc002d;
-  }
-  h3.sobremesas {
-    background-color: #fce4ec;
-    color: #bc002d;
-    border: 2px solid #bc002d;
-  }
+h3.category-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  margin: 30px 0 15px 0;
+  border-radius: 6px;
+}
 
-  ul.menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+h3.comida {
+  background-color: #bc002d;
+  color: #ffffff;
+}
+h3.bebida {
+  background-color: #000000;
+  color: #ffffff;
+}
+h3.sobremesa {
+  background-color: #f8d7da;
+  color: #bc002d;
+  border: 2px solid #bc002d;
+}
 
-  ul.menu-list li {
-    padding: 15px;
-    margin-bottom: 12px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    transition: background-color 0.3s;
-  }
+ul.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  ul.menu-list li:hover {
-    background-color: #fff0f0;
-  }
+ul.menu-list li {
+  padding: 15px;
+  background-color: #fffdfd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: background-color 0.3s;
+}
 
-  ul.menu-list li strong {
-    display: block;
-    font-size: 1.2em;
-    color: #bc002d;
-    margin-bottom: 5px;
-    flex: 1 1 100%;
-  }
+ul.menu-list li:hover {
+  background-color: #f0f0f0;
+}
 
-  .price {
-    font-weight: bold;
-    margin-right: 15px;
-    white-space: nowrap;
-    color: #333;
-  }
+li img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #bc002d;
+  flex-shrink: 0;
+}
 
-  .order-button {
-    background-color: #bc002d;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    white-space: nowrap;
-  }
+.flexColunm {
+  flex: 1;
+}
 
-  .order-button:hover {
-    background-color: #8a001f;
-  }
+.flexColunmsInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
 
-  footer {
-    background-color: #bc002d;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-  }
+li strong {
+  font-size: 1.4em;
+  color: #bc002d;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+.order-button {
+  background-color: #bc002d;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  max-width: fit-content;
+}
+
+.order-button:hover {
+  background-color: #800000;
+}
+
+footer {
+  background-color: #bc002d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
